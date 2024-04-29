@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url('/static/images/12.jpg'); /* Set your background image path */
+            background-size: cover;
+            color: white; /* Text color */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .result-box {
+            border: 2px solid white; /* Border style */
+            padding: 10px; /* Padding inside the box */
+            margin-top: 20px; /* Margin from the top */
+            text-align: center;
+            color: #FFD700; /* Text color (gold) */
+            font-size: 20px; /* Font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Network Intrusion Detection Result</h1>
+        <div class="result-box">
+            <p>{{ prediction_text }}</p>
+        </div>
+    </div>
+</body>
+</html>
